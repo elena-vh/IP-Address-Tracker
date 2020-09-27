@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <!-- IP Address Tracker  -->
+    <!-- Search for any IP address or domain IP Address Location Timezone UTC -->
+    <!-- add offset value dynamically using the API -->
+    <!-- ISP -->
+
+    <div class="header">
+      <div class="infoBar">
+        <div class="first">
+          <div class="section">
+            <div class="infoTitle">IP ADDRESS</div>
+            <div class="ipAddress info"></div>
+          </div>
+          <div class="section">
+            <div class="infoTitle">LOCATION</div>
+            <div class="location info"></div>
+          </div>
+        </div>
+        <div class="second">
+          <div class="section">
+            <div class="infoTitle">COUNTRY FLAG</div>
+            <div class="flag info"></div>
+          </div>
+          <div class="section">
+            <div class="infoTitle">ISP</div>
+            <div class="isp info"></div>
+          </div>
+        </div>
+      </div>
+      <div id="title">IP Address Tracker</div>
+      <form id="search">
+        <button id="getIp">FIND IP</button>
+
+        <input type="text" id="input" required placeholder="Search for any IP address or domain" />
+        <input type="submit" id="submit" value=">" />
+      </form>
+    </div>
+    <div id="mapid"></div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Elena</a>.
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
